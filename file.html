@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neeraj Reddy - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xCQch9Iv/wrAuwLh2UvNswzppNF6IWah1XSAUXN3dEYNJdXCpG8x0m3uRVdgJFz2" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS with Animations */
+
+/* Navbar Animation */
+.navbar {
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* About Section Animation */
+#about {
+  animation: fadeIn 1s ease-in-out;
+  background-color: #000000; /* Black background */
+  color: #00FF00; /* Green text */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Skills Section Animation */
+#skills {
+  animation: scaleIn 1s ease-in-out;
+  background-color: #000000; /* Black background */
+  color: #00FF00; /* Green text */
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Projects Section Animation */
+#projects {
+  animation: slideInRight 1s ease-in-out;
+  background-color: #000000; /* Black background */
+  color: #00FF00; /* Green text */
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Contact Section Animation */
+#contact {
+  animation: slideInUp 1s ease-in-out;
+  background-color: #000000; /* Black background */
+  color: #00FF00; /* Green text */
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Footer Animation */
+footer {
+  animation: fadeIn 1s ease-in-out;
+  background-color: #000000; /* Black background */
+  color: #00FF00; /* Green text */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Neeraj Reddy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p>Experienced Java Full Stack Developer with a passion for creating robust and scalable web applications.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Languages</h4>
+          <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <!-- Add more sections for Backend, Database, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Online Bookstore Application</h5>
+              <p class="card-text">Developed a full-stack web application using Spring Boot for the backend and HTML, CSS, JavaScript, and Bootstrap for the frontend.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards for other projects -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Project Name</h5>
+            <p class="card-text">Project Description.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Another Project</h5>
+            <p class="card-text">Description of another project.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p><i class="fas fa-envelope"></i> Email: neerajreddy1625@gmail.com</p>
+          <p><i class="fas fa-mobile-alt"></i> Mobile: 6303758630</p>
+          <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/kotha-neeraj-reddy-821533190/" target="_blank">Neeraj Reddy</a></p>
+          <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/NeerajReddyKotha" target="_blank">NeerajReddyKotha</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2024 Neeraj Reddy
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Example: Adding a click event listener to a button
+      var button = document.querySelector("#myButton");
+      button.addEventListener("click", function() {
+        alert("Button clicked!");
+      });
+
+      // Example: Manipulating the DOM
+      var paragraph = document.createElement("p");
+      paragraph.textContent = "This is a dynamically created paragraph.";
+      document.body.appendChild(paragraph);
+    });
+  </script>
+</body>
+</html>
